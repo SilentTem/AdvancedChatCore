@@ -138,6 +138,13 @@ public class AdvancedTextField extends TextFieldWidget {
     }
 
     @Override
+    public void eraseWords(int wordOffset) {
+        super.eraseWords(wordOffset);
+        updateHistory();
+        updateRender();
+    }
+
+    @Override
     public void setSuggestion(@Nullable String suggestion) {
         this.suggestion = suggestion;
     }
