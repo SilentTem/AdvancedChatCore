@@ -43,7 +43,7 @@ public class ColorUtil {
      * @param c The color to pack
      * @return The packed int
      */
-    public int colorToInt4f(Color c) {
+    public static int colorToInt4f(Color c) {
         int rgb = c.alpha();
         rgb = (rgb << 8) + c.red();
         rgb = (rgb << 8) + c.green();
