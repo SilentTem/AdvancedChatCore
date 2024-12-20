@@ -403,6 +403,11 @@ public class AdvancedChatScreen extends GuiBase {
 
     }
 
+    @Override
+    protected void drawScreenBackground(DrawContext drawContext, int mouseX, int mouseY) {
+        // Don't.
+    }
+
     private void setText(String text) {
         this.chatField.setText(text);
     }
